@@ -27,28 +27,103 @@
             </div>
         </nav>
         <!-- Image element - set the background image for the header in the line below-->
-        <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')" id="move2">
+        <div class="py-5 bg-image-full" style="background-color: black;" id="move2">
             <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-            <div style="height: 20rem"></div>
+            <div style="text-align: center;">
+            <video controls width="250" style="height: 300px; width: 500px;">
+                <source src="/static/assets/Tai Verdes - LAst dAy oN EaRTh (Official Video).mp4" type="video/webm">
+            </video>
+            <div style="font-size: 5px; color: white;">
+                LAst dAy oN EaRTh<br>
+                Tai Verdes<br><br>
+                <u>YouTube 라이선스 제공자</u><br>
+                SME(Arista Records 대행)<br>
+                AMRA, Kobalt Music Publishing, AMRA BR, SOLAR Music Rights Management,<br>
+                Sony Music Publishing, UMPG Publishing 및 음악 권리 단체 6개
+            </div>
+            <p><br><br></p><p><br><br></p>
+            <a href="#move"><img src="/static/assets/down.png" width="25" height="25"></a>
+            <p><br><br></p><p><br><br></p><p><br><br></p>
         </div>
         <!-- Content section-->
         <section class="py-5" style="background-color: black; color:rgba(187, 159, 3, 0.781);">
-          <div class="container my-5">
+            <div class="container my-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h5 style="font-weight: bold;">Ways to contact ...<br></h2>
-                            <div id="pop" style="margin-top: 10px;">
-                                <a id=""><img src="/static/assets/email.png" style="width: 40px; margin: 7px;"></a>
-                                <a id=""><img src="/static/assets/viber.png" style="width: 40px; margin: 7px;"></a>
-                                <a id=""><img src="/static/assets/facebook.png" style="width: 40px; margin: 7px;"></a>
-                                <a id=""><img src="/static/assets/instagram.png" style="width: 40px; margin: 7px;"></a>
-                                <a id=""><img src="/static/assets/twitter.png" style="width: 40px; margin: 7px;"></a>
+                    <div id="move" class="col-lg-6">
+                        <h5 style="font-weight: bold;">Ways to contact ...<br></h5>
+                        <h6 style="font-size: 5px;">click images</h6>
+                            <divstyle="margin-top: 10px; margin-bottom: 10px;">
+                                <a href="javascript:viewEmail();"><img src="/static/assets/email.png" style="width: 40px; margin: 7px;"></a>
+                                <a href="javascript:viewViber();"><img src="/static/assets/viber.png" style="width: 40px; margin: 7px;"></a>
+                                <a href="javascript:viewFacebook();"><img src="/static/assets/facebook.png" style="width: 40px; margin: 7px;"></a>
+                                <a href="javascript:viewInstagram();"><img src="/static/assets/instagram.png" style="width: 40px; margin: 7px;"></a>
+                                <a href="javascript:viewTwitter();"><img src="/static/assets/twitter.png" style="width: 40px; margin: 7px;"></a>
+                            </div>
+                            <div id="pop_email" style="background-color: rgba(255, 255, 255, 0.5); color: rgb(0, 0, 0);">
+                                <p style="font-size: 18px;">*******@naver.com</p><p style="font-size: 2px;">(버튼을 다시 눌러 닫으세요.)</p>
+                            </div>
+                            <div id="pop_viber" style="background-color: rgba(255, 255, 255, 0.5); color: rgb(0, 0, 0);">
+                                <p style="font-size: 18px;">010-xxxx-xxxx</p><p style="font-size: 2px;">(버튼을 다시 눌러 닫으세요.)</p>
+                            </div>
+                            <div id="pop_facebook" style="background-color:  #3b589850; color:white">
+                                <p style="font-size: 18px;">facebook.com/#######</p><p style="font-size: 2px;">(버튼을 다시 눌러 닫으세요.)</p>
+                            </div>
+                            <div id="pop_instagram" style="background-color: #fb395950; color:white">
+                                <p style="font-size: 18px;">@*******</p><p style="font-size: 2px;">(버튼을 다시 눌러 닫으세요.)</p>
+                            </div>
+                            <div id="pop_twitter" style="background-color: #00abee50; color:white">
+                                <p style="font-size: 18px;">@#######</p><p style="font-size: 2px;">(버튼을 다시 눌러 닫으세요.)</p>
                             </div>
                             <style>
-                
+                                #pop_email, #pop_viber, #pop_facebook, #pop_instagram, #pop_twitter {
+                                    text-align: center;
+                                    align-items: center;
+                                    height: 70px;
+                                    width: 250px;
+                                    position: fixed;
+                                    margin-left: 0%;
+                                    top: 50%;
+                                    margin-top: -50px;
+                                    z-index:1;
+                                    display:none;
+                                }
                             </style>
                             <script>
-                
+                                function viewEmail(){
+                                    if(document.getElementById("pop_email").style.display=="none"){
+                                        document.getElementById("pop_email").style.display='inline'
+                                    }else{
+                                        document.getElementById("pop_email").style.display='none'
+                                    }
+                                }
+                                function viewViber(){
+                                    if(document.getElementById("pop_viber").style.display=="none"){
+                                        document.getElementById("pop_viber").style.display='inline'
+                                    }else{
+                                        document.getElementById("pop_viber").style.display='none'
+                                    }
+                                }
+                                function viewFacebook(){
+                                    if(document.getElementById("pop_facebook").style.display=="none"){
+                                        document.getElementById("pop_facebook").style.display='inline'
+                                    }else{
+                                        document.getElementById("pop_facebook").style.display='none'
+                                    }
+                                }
+                                function viewInstagram(){
+                                    if(document.getElementById("pop_instagram").style.display=="none"){
+                                        document.getElementById("pop_instagram").style.display='inline'
+                                    }else{
+                                        document.getElementById("pop_instagram").style.display='none'
+                                    }
+                                }
+                                function viewTwitter(){
+                                    if(document.getElementById("pop_twitter").style.display=="none"){
+                                        document.getElementById("pop_twitter").style.display='inline'
+                                    }else{
+                                        document.getElementById("pop_twitter").style.display='none'
+                                    }
+                                }
                             </script>
                     </div>
                 </div>
